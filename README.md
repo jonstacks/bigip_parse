@@ -20,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+
+config = BigIParse::Config.new(File.read('bigip.conf'))
+
+# Virtual Server Definitions
+vs_defs = config.subsections.select do |s|
+  s.header.starts_with?('ltm virtual ')
+end
+
+# Print Virtual Server Names, one per line
+vs_defs.each { |vs_def| puts vs_def.header.split.last }
+
+```
 
 ## Development
 
