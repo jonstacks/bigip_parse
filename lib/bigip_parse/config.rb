@@ -49,7 +49,7 @@ module BigIParse
     end
 
     def subsections
-      @config.sub_sections
+      @config.subsections
     end
   end
 end
