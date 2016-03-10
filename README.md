@@ -1,4 +1,4 @@
-# BigipParse
+# BigipParse [![Build Status](https://travis-ci.org/jonstacks13/bigip_parse.svg?branch=master)](https://travis-ci.org/jonstacks13/bigip_parse)
 
 Simple gem to parse BIG IP configs
 
@@ -50,4 +50,3 @@ version, push git commits and tags, and push the `.gem` file to
 
 Bug reports and pull requests are welcome on GitHub at
 https://github.com/jonstacks13/bigip_parse.
-
