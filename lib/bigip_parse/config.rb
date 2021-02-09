@@ -19,7 +19,7 @@ module BigIParse
             )
           )
         )?                         # Make content capture optional
-      /mx
+      /mx.freeze
 
       def initialize(header, content = nil)
         @header = header
@@ -29,6 +29,7 @@ module BigIParse
       def content
         return nil if @content.nil?
         return nil if @content.strip.empty?
+
         @content.strip_heredoc.lstrip
       end
 
@@ -38,6 +39,7 @@ module BigIParse
 
       def subsections
         return [] if content.nil?
+
         content.scan(REGEX).map { |h, c| self.class.new(h.strip, c) }
       end
 
