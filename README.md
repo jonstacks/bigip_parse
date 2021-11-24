@@ -1,4 +1,7 @@
-# BigipParse [![Build Status](https://travis-ci.org/jonstacks13/bigip_parse.svg?branch=master)](https://travis-ci.org/jonstacks13/bigip_parse)
+# BigipParse
+
+[![CI](https://github.com/jonstacks/bigip_parse/actions/workflows/ci.yml/badge.svg)](https://github.com/jonstacks/bigip_parse/actions/workflows/ci.yml)
+
 
 Simple gem to parse BIG IP configs
 
